@@ -4,7 +4,6 @@ angular.module('ionic-timepicker.provider', [])
 
     var config = {
       setLabel: 'Set',
-      // closeLabel: 'Close',
       clearLabel: 'Clear',
       inputTime: (((new Date()).getHours() * 60 * 60) + ((new Date()).getMinutes() * 60)),
       format: 12,
@@ -125,7 +124,6 @@ angular.module('ionic-timepicker.provider', [])
       };
 
       $scope.closeIonicTimePicker = function () {
-        console.log('close the timepicker');
         $ionicPopup.hide();
       };
 
@@ -154,11 +152,6 @@ angular.module('ionic-timepicker.provider', [])
             $scope.mainObj.callback(totalSec);
           }
         });
-
-        // buttons.push({
-        //   text: $scope.mainObj.closeLabel,
-        //   type: 'button_close'
-        // });
 
         buttons.push({
           text: $scope.mainObj.clearLabel,
