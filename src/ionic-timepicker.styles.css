@@ -3,6 +3,19 @@ To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
 For example, you might change some of the default colors:
 */
+
+.ionic_timepicker_popup div.close,
+.ionic_timepicker_modal div.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  line-height: 1;
+  font-weight: 600;
+}
+
 .ionic_timepicker_popup .font_28px {
   font-size: 28px;
 }
