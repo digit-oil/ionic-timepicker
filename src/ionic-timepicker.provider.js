@@ -123,7 +123,7 @@ angular.module('ionic-timepicker.provider', [])
       };
 
       $scope.closeIonicTimePicker = function () {
-        $ionicPopup.hide();
+        $scope.popup.close();
       };
 
       provider.openTimePicker = function (ipObj) {
@@ -166,8 +166,6 @@ angular.module('ionic-timepicker.provider', [])
           cssClass: 'ionic_timepicker_popup',
           buttons: buttons
         });
-
-        console.log($scope.popup);
 
       };
 
